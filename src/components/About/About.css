@@ -1,0 +1,158 @@
+.contain {
+    height: 100vh;
+    padding: 3rem 0px;
+    /* overflow: hidden; */
+}
+
+.contain::-webkit-scrollbar{
+    display: none;
+}
+
+.img2 {
+    width: 25vw;
+    border-radius: 50%;
+    margin-left: 6rem;
+    animation: scroll1 linear both;
+    animation-timeline: view();
+    animation-range:0% 50%
+}
+
+.about-me {
+    font-size: 5rem;
+    /* font-family: cursive; */
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  /* color: #4ADBC4; */
+  color: #90e0ef;
+    /* background: rgb(252,176,69);
+background: linear-gradient(90deg, rgba(252,176,69,1) 43%, rgba(253,29,29,1) 57%, rgba(131,58,180,1) 100%); */
+    background-clip: text;
+    /* color: transparent; */
+    text-align: center;
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range:0% 30%;
+}
+
+.main-2 {
+    margin: 3rem 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    /* animation: scroll1 linear both;
+    animation-timeline: view();
+    animation-range:0% 30% */
+    
+}
+.main-2::-webkit-scrollbar{
+    display: none;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    animation: skills both;
+    animation-timeline: view();
+    animation-range:0% 50%;
+}
+
+@keyframes skills {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.about-skills {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.about-skills p {
+    min-width: 100px;
+}
+
+.about-skills hr {
+    border: none;
+    outline: none;
+    height: 8px;
+    border-radius: 50px;
+    background: #40E0D0;
+    background: -webkit-linear-gradient(to left, #FF0080, #FF8C00, #40E0D0);
+    background: linear-gradient(to left, #FF0080, #FF8C00, #40E0D0);
+}
+
+.about-skills:hover{
+    transform: scale(1.1);
+}
+
+.experience{
+    padding: 0px 2rem;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 100px 0px;
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range:0% 30%;
+}
+
+
+@keyframes scroll{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+
+@keyframes scroll1{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .main-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .experience{
+        gap: 30px;
+    }
+    .skills{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* padding-left: 3rem; */
+    }
+    .img2{
+        margin-left: 0px;
+    }
+    .about-me{
+        font-size: 3rem;
+    }
+    
+}

@@ -1,0 +1,113 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    font-size: large;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+    padding: .5rem .5rem;
+    border-radius: 30px;
+}
+
+
+li:active {
+    box-shadow: 0px 0px 10px;
+}
+
+.head {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: transparent;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to left, #45607b, #bdc3c7);
+    background: linear-gradient(to left, #45607b, #bdc3c7);
+    background-clip: text;
+    overflow-x: hidden;
+}
+
+.contact-me {
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+
+}
+
+.contact-me:active {
+    box-shadow: 0px 0px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: all linear 0.3s;
+}
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    .open-menu {
+        width: 40px;
+        position: fixed;
+        display: block;
+        color: white;
+        position: fixed;
+        right: 20px;
+        top: 15px;
+    }
+    .close-menu {
+        width: 40px;
+        display: none;
+        color: #45607b;
+        position: fixed;
+        right: 15px;
+        top: 13px;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    ul{
+        /* justify-content: center; */
+        align-items: first baseline;
+        padding: 1rem 0rem;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        right: -350px;
+        background-color: #676c6f;
+        color: rgb(255, 255, 255);
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right .3s;
+    }
+    ul li{
+        background-color: #45607b;
+        padding: .5rem .5rem;
+        width: 90px;
+        text-align: center;
+        margin: 0rem 4rem;
+    }
+}

@@ -1,0 +1,103 @@
+.contact-us {
+    margin: 10rem 0px;
+}
+
+.contect-head {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 100px;
+    color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    /* background: linear-gradient(90deg, rgba(252, 176, 69, 1) 43%, rgba(253, 29, 29, 1) 57%, rgba(131, 58, 180, 1) 100%); */
+    color: #90e0ef;
+    background-clip: text;
+}
+
+.contact-conatainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact-conatainer h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: transparent;
+    font-family: cursive;
+    background: linear-gradient(90deg, rgba(252, 176, 69, 1) 43%, rgba(253, 29, 29, 1) 57%, rgba(131, 58, 180, 1) 100%);
+    background-clip: text;
+}
+
+.contact-conatainer p {
+    width: 350px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input div {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.input input {
+    outline: none;
+    width: 300px;
+    height: 2rem;
+    margin: 1rem 0px;
+    padding-left: 10px;
+    background-color: #3C4D5D;
+    border: none;
+    color: white;
+}
+
+.input textarea {
+    outline: none;
+    margin: 1rem 0px;
+    height: 200px;
+    color: white;
+    background-color: #3C4D5D;
+    border: none;
+    padding: .5rem;
+}
+
+.input button {
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+
+.input button:active {
+    box-shadow: 0px 0px 10px;
+}
+
+@media (max-width: 700px) {
+    .contact-conatainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .contect-head {
+        font-size: 3rem;
+    }
+}
