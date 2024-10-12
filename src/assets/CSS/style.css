@@ -11,9 +11,16 @@ body {
     color: white;
     /* overflow-x: hidden; */
     background: linear-gradient(to bottom, #1f2c38, #627989 100%);
-
+    -ms-overflow-style: none;
+    /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+}
+
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+    display: none;
 }

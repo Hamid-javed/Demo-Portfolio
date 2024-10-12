@@ -75,6 +75,7 @@ nav a {
         right: 20px;
         top: 15px;
     }
+
     .close-menu {
         width: 40px;
         display: none;
@@ -88,7 +89,7 @@ nav a {
         justify-content: space-around;
     }
 
-    ul{
+    ul {
         /* justify-content: center; */
         align-items: first baseline;
         padding: 1rem 0rem;
@@ -103,7 +104,8 @@ nav a {
         z-index: 2;
         transition: right .3s;
     }
-    ul li{
+
+    ul li {
         background-color: #45607b;
         padding: .5rem .5rem;
         width: 90px;
